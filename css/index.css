@@ -1,0 +1,933 @@
+/******* header *****/
+
+header {
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: 5px solid #56cfe1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    transition: all 0.5s ease 0s;
+}
+
+header .contenedor {
+    margin: 0 auto;
+    display: flow-root;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .logo {
+    display: block;
+    width: 217px;
+    height: 95px;
+    background: url('../img/logoMorado.png') no-repeat top left;
+    background-size: 100% !important;
+    margin: 5px 0px 5px -24px;
+    float: none;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal-Activador {
+    margin: 43px 0px;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    padding: 9px 0px;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal-Activador span {
+    position: relative;
+    display: block;
+}
+
+header .menuPrincipal-Activador span,
+header .menuPrincipal-Activador span::before,
+header .menuPrincipal-Activador span::after {
+    width: 25px;
+    height: 4px;
+    background: #6700a3;
+    display: block;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal-Activador span::before,
+header .menuPrincipal-Activador span::after {
+    position: absolute;
+    left: 0px;
+    content: "";
+}
+
+header .menuPrincipal-Activador span::before {
+    top: -8px;
+}
+
+header .menuPrincipal-Activador span::after {
+    bottom: -8px;
+}
+
+header .menuPrincipal {
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal li {
+    display: block;
+    float: left;
+    padding: 0 15px;
+}
+
+header .menuPrincipal li a {
+    padding: 10px 0px;
+    display: block;
+    position: relative;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+header .menuPrincipal li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .menuPrincipal li a::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 0%;
+    height: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.5s ease 0s;
+}
+
+header .menuPrincipal li a:hover::after {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado {
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado .logo {
+    background: url('../img/logo.png') no-repeat top left;
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado .menuPrincipal-Activador span,
+header.Activado .menuPrincipal-Activador span::before {
+    width: 27px;
+    height: 4px;
+    background: #ffffff;
+    transition: all 0.5s ease 0s;
+    transform: rotate(45deg);
+}
+
+header.Activado .menuPrincipal-Activador span::after {
+    width: 0;
+    height: 0;
+}
+
+header.Activado .menuPrincipal-Activador span {
+    transform: rotate(45deg);
+}
+
+header.Activado .menuPrincipal-Activador span::before {
+    transform: rotate(-90deg);
+    top: 0px;
+}
+
+header.Activado .menuPrincipal {
+    top: 30px;
+    transition: all 0.5s ease 0s;
+}
+
+header.fixed {
+    position: fixed;
+}
+
+header.fixed .logo {
+    width: 150px;
+    height: 70px;
+    transition: all 0.5s ease 0s;
+}
+
+header.fixed .menuPrincipal-Activador {
+    margin: 29px 0px;
+    transition: all 0.5s ease 0s;
+}
+
+header.Activado.fixed .menuPrincipal {
+    top: 20px;
+}
+
+header.fixed .menuPrincipal li a {
+    font-size: 20px;
+}
+
+
+/******* slider *****/
+
+.sliderContenedor {
+    height: 600px;
+    width: 100%;
+}
+
+.slide {
+    /*display: none;*/
+    position: relative;
+}
+
+.slide span {
+    width: 100%;
+    display: block;
+    height: 600px;
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.slide span.sliderImagen1 {
+    background-image: url(../img/index/slider1.jpg);
+}
+
+.slide span.sliderImagen2 {
+    background-image: url(../img/index/slider2.jpg);
+}
+
+.slide span.sliderImagen3 {
+    background-image: url(../img/index/slider3.jpg);
+}
+
+.sliderInformacion {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.sliderInformacion p.titulo {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.sliderInformacion p {
+    color: #6700a3;
+    letter-spacing: 5px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.animacionTitulo {
+    -webkit-animation-name: animacionTitulo;
+    -webkit-animation-duration: 1.9s;
+    animation-name: animacionTitulo;
+    animation-duration: 1.9s;
+}
+
+@-webkit-keyframes animacionTitulo {
+    0% {
+        opacity: .4;
+        left: 30%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes animacionTitulo {
+    0% {
+        opacity: .4;
+        left: 30%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+main>section {
+    padding-bottom: 75px;
+}
+
+main>section#seccionPublicidad {
+    padding: 0px;
+}
+
+section.contenedor {
+    margin: 25px auto;
+    max-width: 1024px;
+}
+
+
+/*********/
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #6700a3;
+    padding-top: 100px;
+    letter-spacing: 3px;
+}
+
+.imgBtn {
+    display: block;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 411px;
+    height: 73px;
+    padding: 10px;
+}
+
+.imgBtn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.imgBtn.eventosSaludAnimal {
+    background-image: url("../img/index/interactuamosBtn1.jpg");
+}
+
+.imgBtn.voluntarios {
+    background-image: url("../img/index/interactuamosBtn2.jpg");
+}
+
+.imgBtn.donaciones {
+    background-image: url("../img/index/interactuamosBtn3.jpg");
+}
+
+.imgBtn span.accionesContenedor {
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.5s ease 0s;
+    display: block;
+    width: 409px;
+    height: 71px;
+    position: relative;
+}
+
+.imgBtn:hover span.accionesContenedor {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.5s ease 0s;
+}
+
+.imgBtn span.masInfo,
+.imgBtn span.llamarAccion {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.imgBtn span.masInfo,
+.imgBtn:hover span.llamarAccion {
+    font-size: 24px;
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+
+.imgBtn:hover span.masInfo,
+.imgBtn span.llamarAccion {
+    font-size: 0px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*
+.imgBtn span.masInfo,
+.imgBtn:hover span.llamarAccion {
+    opacity: 1;
+    width: 409px;
+    height: 71px;
+    background: none;
+    border: none;
+}
+
+.imgBtn:hover span.masInfo,
+.imgBtn span.llamarAccion {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}*/
+
+
+/* Inicio: Estilos de la sección "Acerca de nosotros" de Pro Mascotas LP */
+
+#seccionAcercaNosotros .contenedor p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+#seccionAcercaNosotros .contenedor h3 {
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Inicio: Estilos de la sección "Acerca de nosotros" de Pro Mascotas LP */
+
+
+/* Inicio: Estilos de la sección "¿Interactuamos?" de Pro Mascotas LP */
+
+#seccionInteraccion {
+    background: #56cfe1;
+    min-height: 600px;
+}
+
+.interactuamos .interacciones {
+    display: flow-root;
+}
+
+.interactuamosItemContenedor {
+    width: calc(50% - 1px);
+    margin: 20px 0;
+    float: left;
+}
+
+.interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:first-child {
+    float: right;
+    border-right: none;
+}
+
+.interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:last-child {
+    float: left;
+    border-right: 1px solid #ffffff;
+}
+
+.interactuamosItemContenedor:first-child {
+    border-right: 1px solid #ffffff;
+}
+
+.interactuamosItemContenedor div {
+    margin: 25px auto;
+    width: 431px;
+}
+
+.interactuamosItemContenedor h3 {
+    color: black;
+    font-size: 20px;
+}
+
+.interactuamosItemContenedor:first-child h3 {
+    text-align: right;
+}
+
+.interactuamosItemContenedor p {
+    margin-bottom: 30px;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+.interactuamosItemContenedor:first-child p {
+    text-align: right;
+}
+
+.interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:first-child h3,
+.interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:first-child p {
+    text-align: left;
+}
+
+.interactuamosItemContenedor .imgBtn {
+    margin-top: 40px;
+}
+
+.seccion-izq,
+.seccion-der {
+    width: calc(50% - 50px);
+    padding-top: 25px;
+    min-height: 160px;
+}
+
+.seccion-izq {
+    float: left;
+}
+
+.seccion-der {
+    float: right;
+}
+
+
+/* Inicio: Estilos de la sección "Contactenos" de Pro Mascotas LP */
+
+#seccionContactanos {
+    min-height: 600px;
+    color: #ffffff;
+    background: rgb(30, 73, 79);
+    background: linear-gradient(90deg, rgba(30, 73, 79, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(41, 0, 65, 1) 100%);
+}
+
+#seccionContactanos h3 {
+    color: #ffffff;
+}
+
+#seccionContactanos input {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#seccionContactanos textarea {
+    height: 50px;
+    background-color: #ffffff;
+}
+
+#btn-contactenos {
+    margin-top: 20px;
+}
+
+.span-contac {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#seccionPublicidad {
+    background-color: #cccde2;
+    height: 152px;
+}
+
+#seccionPublicidad {
+    margin-top: -25px;
+}
+
+.img-publicidad {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-publicidad img {
+    border: 1px solid #6700a3;
+}
+
+
+/* Inicio: Estilos de la sección "¿Interactuamos?" de Pro Mascotas LP */
+
+
+/* Inicio: Estilos de la sección "¿Te unis?" de Pro Mascotas LP */
+
+.imgBtn.eventosSaludAnimalD1 {
+    background-image: url("../img/index/unirmeDuennoBtn.jpg");
+}
+
+.imgBtn.eventosSaludAnimalD2 {
+    background-image: url("../img/index/unirmeProveedorBtn.jpg");
+}
+
+#seccionUnirme {
+    min-height: 500px;
+}
+
+#seccionUnirme h3 {
+    color: #3d3d46;
+}
+
+#seccionUnirme p {
+    margin-bottom: 25px;
+}
+
+
+/* Inicio: Estilos de la sección "¿Interactuamos?" de Pro Mascotas LP */
+
+
+/* Inicio: Estilos de la sección "Contactenos" de Pro Mascotas LP */
+
+#seccionContactanos {
+    background: rgb(30, 73, 79);
+    background: linear-gradient(45deg, rgba(30, 73, 79, 1) 0%, rgba(0, 0, 0, 1) 54%, rgba(41, 0, 65, 1) 100%);
+    min-height: 600px;
+}
+
+#seccionContactanos .contenedor {
+    margin-top: 0px;
+}
+
+.contactenos-fila {
+    margin-top: 30px;
+}
+
+#seccionContactanos textarea,
+#seccionContactanos select,
+#seccionContactanos input {
+    width: 94%;
+    margin-top: 10px;
+}
+
+#seccionContactanos .flotar-der,
+#seccionContactanos .flotar-izq {
+    width: 50%;
+    margin-top: 25px;
+}
+
+#seccionContactanos .columna label p {
+    color: #ddd;
+    margin-left: 10px;
+}
+
+.contactenos-fila p {
+    margin: 0px;
+}
+
+#seccionContactanos .flotar-der button {
+    float: right;
+}
+
+#seccionContactanos .columna h3 {
+    color: #ddd;
+    margin-left: 10px;
+}
+
+
+/* Final: Estilos de la sección "Contactenos" de Pro Mascotas LP */
+
+
+/* Inicio: Estilos de la sección "Patrocinadores" de Pro Mascotas LP */
+
+#seccionPatrocinadores {
+    background: #56cfe1;
+}
+
+#seccionPatrocinadores .contenedor {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.patrocinadores {
+    display: block;
+    margin: 20px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 10+, Firefox on Android */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    /* IE 6-9 */
+}
+
+.patrocinadores:hover {
+    transition: all 0.5s ease 0s;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+.patrocinador1 {
+    background-image: url("../img/index/patrocinadoresBtn1.png");
+    height: 86px;
+    width: 87px;
+}
+
+.patrocinador2 {
+    background-image: url("../img/index/patrocinadoresBtn2.png");
+    height: 86px;
+    width: 142px;
+}
+
+.patrocinador3 {
+    background-image: url("../img/index/patrocinadoresBtn3.png");
+    height: 85px;
+    width: 156px;
+}
+
+.patrocinador4 {
+    background-image: url("../img/index/patrocinadoresBtn4.png");
+    height: 88px;
+    width: 108px;
+}
+
+.patrocinador5 {
+    background-image: url("../img/index/patrocinadoresBtn5.png");
+    height: 86px;
+    width: 95px;
+}
+
+
+/* Final: Estilos de la sección "Patrocinadores" de Pro Mascotas LP */
+
+
+/*******Responsive********/
+
+@media screen and (max-width: 1700px) {
+    header.Activado .menuPrincipal {
+        top: 34px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    header .menuPrincipal li {
+        padding: 0 10px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 18px;
+    }
+    .slide span {
+        background-position: bottom center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header .logo {
+        width: 150px;
+        height: 70px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 16px;
+    }
+    header.Activado .menuPrincipal-Activador span,
+    header.Activado .menuPrincipal-Activador span::before {
+        width: 23px;
+    }
+    header.Activado .menuPrincipal {
+        top: 20px;
+    }
+    header .menuPrincipal-Activador {
+        margin: 29px 0px;
+    }
+    .sliderContenedor,
+    .slide span {
+        height: 420px;
+    }
+    .sliderInformacion {
+        transform: none;
+    }
+    .sliderInformacion p.titulo {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .sliderInformacion p {
+        font-size: 15px;
+    }
+    .contenedor,
+    section.contenedor {
+        max-width: 90%;
+        width: 90%;
+    }
+    .sliderInformacion {
+        left: 5%;
+    }
+    @-webkit-keyframes animacionTitulo {
+        0% {
+            opacity: .4;
+            left: 30%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    @keyframes animacionTitulo {
+        0% {
+            opacity: .4;
+            left: 30%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header.Activado {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    header .menuPrincipal {
+        right: 35px;
+    }
+    header .menuPrincipal li {
+        padding: 0 5px;
+    }
+    header .menuPrincipal li a,
+    header.fixed .menuPrincipal li a {
+        font-size: 15px;
+    }
+    .interactuamosItemContenedor {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .interactuamosItemContenedor:first-child {
+        border: none;
+    }
+    .interactuamosItemContenedor:last-child,
+    .interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:last-child {
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 25px;
+    }
+    .interactuamosItemContenedor:first-child h3,
+    .interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:first-child h3 {
+        text-align: center;
+    }
+    .interactuamosItemContenedor:first-child p,
+    .interactuamos .interacciones.interaccionInvertida .interactuamosItemContenedor:first-child p {
+        text-align: justify;
+    }
+    #seccionUnirme .seccion-izq,
+    #seccionUnirme .seccion-der {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header.fixed .logo {
+        width: 140px;
+    }
+    header.Activado {
+        height: 110px;
+        transition: all 0.5s ease 0s;
+    }
+    header.Activado.fixed .menuPrincipal {
+        top: -65px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        right: 0;
+    }
+    header.Activado.fixed .menuPrincipal {
+        top: 65px;
+    }
+    #seccionContactanos .seccion-izq,
+    #seccionContactanos .seccion-der {
+        float: none;
+        width: 100%;
+    }
+    .contactanosInfoResponsive {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contactanosInfoResponsive p {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #seccionPublicidad {
+        height: auto;
+    }
+    .img-publicidad img {
+        width: 100%;
+    }
+    .patrocinadores:last-child {
+        display: none;
+    }
+    .modal-body .contenedorClasesFlotantes .flotar-izq {
+        display: none;
+    }
+    .modal-body .contenedorClasesFlotantes .w50 {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header.Activado {
+        height: 250px;
+        transition: all 0.5s ease 0s;
+    }
+    header .menuPrincipal {
+        top: -200px;
+    }
+    header.Activado.fixed .menuPrincipal {
+        top: 30px;
+        display: block;
+        right: 35px;
+        width: calc(100% - 35px);
+    }
+    header .menuPrincipal li,
+    header.Activado.fixed .menuPrincipal li {
+        float: none !important;
+    }
+    header .menuPrincipal li a {
+        text-align: right;
+    }
+    .sliderContenedor,
+    .slide span {
+        height: 290px;
+    }
+    .slide span {
+        opacity: 0.5;
+    }
+    .sliderInformacion {
+        top: 32%;
+    }
+    .sliderInformacion p.titulo {
+        font-size: 20px;
+    }
+    .sliderInformacion p {
+        width: 290px;
+    }
+    .interactuamosItemContenedor div {
+        max-width: 100%;
+    }
+    .imgBtn {
+        background-size: 100%;
+        width: 261px;
+        height: 42px;
+        padding: 10px;
+        margin: 0px auto;
+    }
+    .imgBtn span.accionesContenedor {
+        width: 259px;
+        height: 41px;
+    }
+    .imgBtn span.masInfo,
+    .imgBtn:hover span.llamarAccion {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /*.imgBtnContenedor {
+        transform: translateX(-24%);
+    }
+    .imgBtn {
+        transform: scale(60%);
+    }*/
+}

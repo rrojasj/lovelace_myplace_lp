@@ -1,0 +1,114 @@
+.tabla {
+    width: 100%;
+    margin: 30px 0px 25px;
+}
+
+.tabla thead tr {
+    border-top: 10px solid #6700a3;
+}
+
+.tabla th,
+.tabla td {
+    padding: 5px;
+    border-bottom: 1px solid rgba(106, 0, 163, 0.5);
+    height: 30px;
+    vertical-align: middle;
+}
+
+.tabla thead tr th {
+    color: #6700a3;
+    text-align: center;
+}
+
+.tabla tbody tr.Inactivo {
+    background: #e6e6e6;
+}
+
+.tabla tbody tr#idTipoServicio607dbb107fa24051fcbfaafe {
+    display: none;
+}
+
+.tabla tbody tr td {
+    text-align: center;
+    color: #3d3d46;
+}
+
+.tabla tbody tr.Inactivo td {
+    color: #666666;
+}
+
+.tabla tbody tr.Inactivo td.DesactivarContenedor,
+.tabla tbody tr.Activo td.ActivarContenedor {
+    display: none;
+}
+
+.tabla tbody tr td:first-child {
+    text-align: left;
+}
+
+.titulo {
+    border-top: 2px solid #6700a3;
+    color: #6700a3;
+    text-align: center;
+}
+
+.contenido {
+    border-bottom: 2px solid #6700a3;
+    text-align: center;
+}
+
+.tabla td i {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #6700a3;
+    position: relative;
+}
+
+.tabla td i::after {
+    display: block;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 6px;
+    left: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+    width: 0;
+    overflow: hidden;
+}
+
+.tabla td i.fa-toggle-on::after {
+    content: "Desactivar";
+}
+
+.tabla td i.fa-toggle-on:hover::after {
+    transition: all 0.5s ease 0s;
+    width: 62px;
+}
+
+.tabla td i.fa-toggle-off::after {
+    content: "Activar";
+}
+
+.tabla td i.fa-toggle-off:hover::after {
+    transition: all 0.5s ease 0s;
+    width: 42px;
+}
+
+.tabla td i.fa-edit::after {
+    content: "Modificar";
+}
+
+.tabla td i.fa-edit:hover::after {
+    transition: all 0.5s ease 0s;
+    width: 56px;
+}
+
+.tabla td i.fa-trash::after {
+    content: "Eliminar";
+}
+
+.tabla td i.fa-trash:hover::after {
+    transition: all 0.5s ease 0s;
+    width: 47px;
+}
