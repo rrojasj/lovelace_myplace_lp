@@ -398,6 +398,11 @@ h2 {
 }
 
 
+/* #seccionAcercaNosotros {
+    background-color: #EFF7F6;
+} */
+
+
 /* Inicio: Estilos de la sección "Acerca de nosotros" de Pro Mascotas LP */
 
 
@@ -547,7 +552,7 @@ h2 {
 
 #seccionUnirme {
     min-height: 500px;
-    background-color: #cccde2;
+    background-color: #EFF7F6;
 }
 
 #seccionUnirme h3 {
