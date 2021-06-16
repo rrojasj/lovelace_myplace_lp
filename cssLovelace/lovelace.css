@@ -565,12 +565,28 @@ header nav a img {
     padding: 40px 0px;
 }
 
+.nuestroCliente .cliente1 {
+    margin: 0px auto;
+    display: block;
+    width: 250px;
+    height: 102px;
+    background: url('../imagesLovelace/clientes1.png') no-repeat top left;
+}
+
 .nuestroCliente span {
     margin: 0px auto;
     display: block;
-    width: 100px;
+    width: 250px;
     height: 102px;
-    background: url('../imagesLovelace/MyPlace_bg_slogan.png') no-repeat top left;
+    background: url('../imagesLovelace/clientes2.png') no-repeat top left;
+}
+
+.nuestroCliente .cliente3 {
+    margin: 0px auto;
+    display: block;
+    width: 250px;
+    height: 102px;
+    background: url('../imagesLovelace/clientes3.png') no-repeat top left;
 }
 
 

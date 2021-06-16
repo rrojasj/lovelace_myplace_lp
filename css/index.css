@@ -2,7 +2,7 @@
 
 header {
     background: rgba(255, 255, 255, 0.6);
-    border-bottom: 5px solid #56cfe1;
+    border-bottom: 5px solid #7BDFF2;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@ header .logo {
     display: block;
     width: 217px;
     height: 95px;
-    background: url('../img/logoMorado.png') no-repeat top left;
+    background: url('../imagesMyPlace/myplace3.png') no-repeat top left;
     background-size: 100% !important;
     margin: 5px 0px 5px -24px;
     float: none;
@@ -51,7 +51,7 @@ header .menuPrincipal-Activador span::before,
 header .menuPrincipal-Activador span::after {
     width: 25px;
     height: 4px;
-    background: #6700a3;
+    background: #e774ae;
     display: block;
     transition: all 0.5s ease 0s;
 }
@@ -203,15 +203,15 @@ header.fixed .menuPrincipal li a {
 }
 
 .slide span.sliderImagen1 {
-    background-image: url(../img/index/slider1.jpg);
+    background-image: url(../imagesMyPlace/slider1.jpg);
 }
 
 .slide span.sliderImagen2 {
-    background-image: url(../img/index/slider2.jpg);
+    background-image: url(../imagesMyPlace/slider2.1.jpg);
 }
 
 .slide span.sliderImagen3 {
-    background-image: url(../img/index/slider3.jpg);
+    background-image: url(../imagesMyPlace/slider3.jpg);
 }
 
 .sliderInformacion {
@@ -230,7 +230,7 @@ header.fixed .menuPrincipal li a {
 }
 
 .sliderInformacion p {
-    color: #6700a3;
+    color: #e774ae;
     letter-spacing: 5px;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
@@ -287,7 +287,7 @@ h2 {
     font-family: 'Righteous', cursive;
     font-size: 30px;
     text-align: center;
-    color: #6700a3;
+    color: #e774ae;
     padding-top: 100px;
     letter-spacing: 3px;
 }
@@ -312,16 +312,17 @@ h2 {
     text-decoration: none;
 }
 
-.imgBtn.eventosSaludAnimal {
-    background-image: url("../img/index/interactuamosBtn1.jpg");
+.imgBtn.abrcr {
+    background-image: url("../imagesMyPlace/interactuamosBtn1.1.png");
 }
 
 .imgBtn.voluntarios {
-    background-image: url("../img/index/interactuamosBtn2.jpg");
+    background-image: url("../imagesMyPlace/interactuamosBtn2.1.png");
+    border-radius: 2px;
 }
 
 .imgBtn.donaciones {
-    background-image: url("../img/index/interactuamosBtn3.jpg");
+    background-image: url("../imagesMyPlace/interactuamosBtn3.jpg");
 }
 
 .imgBtn span.accionesContenedor {
@@ -403,7 +404,7 @@ h2 {
 /* Inicio: Estilos de la sección "¿Interactuamos?" de Pro Mascotas LP */
 
 #seccionInteraccion {
-    background: #56cfe1;
+    background: #7BDFF2;
     min-height: 600px;
 }
 
@@ -527,7 +528,7 @@ h2 {
 }
 
 .img-publicidad img {
-    border: 1px solid #6700a3;
+    border: 1px solid #e774ae;
 }
 
 
@@ -536,16 +537,17 @@ h2 {
 
 /* Inicio: Estilos de la sección "¿Te unis?" de Pro Mascotas LP */
 
-.imgBtn.eventosSaludAnimalD1 {
-    background-image: url("../img/index/unirmeDuennoBtn.jpg");
+.imgBtn.redVendedor {
+    background-image: url("../imagesMyPlace/red_vendedor1.jpg");
 }
 
-.imgBtn.eventosSaludAnimalD2 {
-    background-image: url("../img/index/unirmeProveedorBtn.jpg");
+.imgBtn.redComprador {
+    background-image: url("../imagesMyPlace/red_comprador1.jpg");
 }
 
 #seccionUnirme {
     min-height: 500px;
+    background-color: #cccde2;
 }
 
 #seccionUnirme h3 {
@@ -611,13 +613,13 @@ h2 {
 /* Final: Estilos de la sección "Contactenos" de Pro Mascotas LP */
 
 
-/* Inicio: Estilos de la sección "Patrocinadores" de Pro Mascotas LP */
+/* Inicio: Estilos de la sección "bienesRaices" de Pro Mascotas LP */
 
-#seccionPatrocinadores {
-    background: #56cfe1;
+#seccionbienesRaices {
+    background: #fff;
 }
 
-#seccionPatrocinadores .contenedor {
+#seccionbienesRaices .contenedor {
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
@@ -625,7 +627,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.patrocinadores {
+.bienesRaices {
     display: block;
     margin: 20px;
     background-size: auto;
@@ -642,7 +644,7 @@ h2 {
     /* IE 6-9 */
 }
 
-.patrocinadores:hover {
+.bienesRaices:hover {
     transition: all 0.5s ease 0s;
     -webkit-filter: none;
     -moz-filter: none;
@@ -650,38 +652,44 @@ h2 {
     filter: none;
 }
 
-.patrocinador1 {
-    background-image: url("../img/index/patrocinadoresBtn1.png");
-    height: 86px;
-    width: 87px;
-}
-
-.patrocinador2 {
-    background-image: url("../img/index/patrocinadoresBtn2.png");
-    height: 86px;
-    width: 142px;
-}
-
-.patrocinador3 {
-    background-image: url("../img/index/patrocinadoresBtn3.png");
+.bienesRaices1 {
+    background-image: url("../imagesMyPlace/bienesraices1.jpg");
     height: 85px;
-    width: 156px;
+    width: 145px;
 }
 
-.patrocinador4 {
-    background-image: url("../img/index/patrocinadoresBtn4.png");
-    height: 88px;
-    width: 108px;
+.bienesRaices2 {
+    background-image: url("../imagesMyPlace/bienesraices2.jpg");
+    height: 85px;
+    width: 183px;
 }
 
-.patrocinador5 {
-    background-image: url("../img/index/patrocinadoresBtn5.png");
-    height: 86px;
-    width: 95px;
+.bienesRaices3 {
+    background-image: url("../imagesMyPlace/bienesraices3.jpg");
+    height: 85px;
+    width: 153px;
+}
+
+.bienesRaices4 {
+    background-image: url("../imagesMyPlace/bienesraices4.jpg");
+    height: 85px;
+    width: 129px;
+}
+
+.bienesRaices5 {
+    background-image: url("../imagesMyPlace/bienesraices5.jpg");
+    height: 85px;
+    width: 148px;
+}
+
+.bienesRaices6 {
+    background-image: url("../imagesMyPlace/bienesraices6.jpg");
+    height: 85px;
+    width: 159px;
 }
 
 
-/* Final: Estilos de la sección "Patrocinadores" de Pro Mascotas LP */
+/* Final: Estilos de la sección "bienesRaices" de Pro Mascotas LP */
 
 
 /*******Responsive********/
@@ -854,7 +862,7 @@ h2 {
     .img-publicidad img {
         width: 100%;
     }
-    .patrocinadores:last-child {
+    .bienesRaices:last-child {
         display: none;
     }
     .modal-body .contenedorClasesFlotantes .flotar-izq {

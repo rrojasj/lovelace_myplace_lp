@@ -210,12 +210,12 @@ a:hover {
 
 .btn,
 .swal2-container .swal2-styled.swal2-confirm {
-    background: #6700a3;
+    background: #7BDFF2;
     border: none;
     font-size: 15px;
     font-weight: 600;
     padding: 10px 20px;
-    color: #ffffff;
+    color: #FFF;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     transition: all 0.5s ease 0s;
@@ -477,7 +477,7 @@ header nav ul li a:hover {
 header nav ul li:hover a::after {
     transition: all 0.5s ease 0s;
     height: 4px;
-    background: rgba(86, 207, 225, 1);
+    background: #56cfe1;
 }
 
 header nav ul li ul {
